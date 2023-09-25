@@ -113,7 +113,9 @@ Tags: Crypto, Forex, and Stocks Trading Business
   display: flex;
   flex-wrap: wrap;
 }
-
+body{
+  position: relative;
+}
 .footer__app-inner,
 .account__social-btn,
 .subtitle--style2,
@@ -1152,7 +1154,7 @@ ol {
 [data-bs-theme="dark"] {
   --nav-header-bg: black;
   --brand-color: #3b94d9;
-  --secondary-color: #8e3bc6;
+  --secondary-color: #3b94d9;
   --tertiary-color: #002a1e;
   --tertiary-color2: #002a1e;
   --tertiary-color3: #0e221e;
@@ -2471,8 +2473,8 @@ ol {
 }
 .swiper-nav__btn.active,
 .swiper-nav__btn:hover {
-  background-color: #8e3bc6;
-  border-color: #8e3bc6;
+  background-color: #3b94d9;
+  border-color: #3b94d9;
 }
 
 .swiper-nav__btn.active i,
@@ -6298,8 +6300,8 @@ textarea:focus-within {
   color: var(--wh-color);
 }
 .btn-style-2 {
-  background-color: #8e3bc6 !important;
-  border: 1px solid #8e3bc6 !important;
+  background-color: #3b94d9 !important;
+  border: 1px solid #3b94d9 !important;
   color: white !important;
 }
 .btn-style-2 span {
@@ -6308,14 +6310,14 @@ textarea:focus-within {
 
 .choose-plan {
   background-color: white !important;
-  border: 1px solid #8e3bc6 !important;
-  color: #8e3bc6 !important;
+  border: 1px solid #3b94d9 !important;
+  color: #3b94d9 !important;
   transition: all 0.1s;
 }
 .choose-plan.active,
 .choose-plan:hover {
-  background-color: #8e3bc6 !important;
-  border: 1px solid #8e3bc6 !important;
+  background-color: #3b94d9 !important;
+  border: 1px solid #3b94d9 !important;
   color: white !important;
 }
 .trk-btn--secondary2 {
@@ -6711,7 +6713,7 @@ textarea:focus-within {
   border-radius: 8px;
   z-index: 9999;
   cursor: pointer;
-  background-color: #8e3bc6;
+  background-color: #3b94d9;
   /* box-shadow: 0px 0 15px 0px rgba(104, 225, 166, 0.7); */
   /* border: 1px solid var(--brand-color); */
 }
@@ -6720,26 +6722,39 @@ textarea:focus-within {
   box-shadow: 0px 0 15px 2px rgba(104, 225, 166, 0.6); */
 }
 @media (min-width: 576px) {
-  .lightdark-switch span {
+  /* .lightdark-switch span {
     width: 40px;
     height: 40px;
     padding: 10px;
     bottom: 7%;
     left: 5%;
-  }
+  } */
 }
-@media (min-width: 768px) {
-  .lightdark-switch span {
-    bottom: 7%;
-    left: 5%;
-  }
-}
-@media (min-width: 992px) {
+
+/* @media (min-width: 992px) {
   .lightdark-switch span {
     bottom: auto;
     left: auto;
     top: 130px;
     right: 60px;
+  }
+} */
+@media (max-width: 768px) {
+
+  .lightdark-switch {
+    position: absolute !important;
+    bottom: 34vh !important;
+    right: 5.5% !important;
+    left: unset !important;
+    top: unset !important;
+    z-index: 3;
+  }
+  .lightdark-switch span {
+    position: unset !important;
+    bottom: unset !important;
+    right: unset !important;
+    left: unset !important;
+    top: unset !important;
   }
 }
 @media (min-width: 1400px) {
@@ -6765,6 +6780,7 @@ textarea:focus-within {
     gap: 15px;
   }
 }
+
 .social--style2 {
   gap: 25px;
 }
@@ -7045,13 +7061,13 @@ textarea:focus-within {
 }
 .social__link.active.social__link--style22,
 .social__link:hover.social__link--style22 {
-  border-color: #8e3bc6;
+  border-color: #3b94d9;
 }
 .social__link.active.social__link--style22 svg,
 .social__link.active.social__link--style22 i,
 .social__link:hover.social__link--style22 svg,
 .social__link:hover.social__link--style22 i {
-  color: #8e3bc6;
+  color: #3b94d9;
 }
 .social__link.active.social__link--style3,
 .social__link:hover.social__link--style3 {
@@ -7941,7 +7957,7 @@ textarea:focus-within {
 .pricing__shape-item--1 {
   content: "";
   height: 95%;
-  border: 2px solid #8e3bc6;
+  border: 2px solid #3b94d9;
   padding: 40px;
   border-radius: 100px 213px 100px 100px;
   opacity: 0.4;
@@ -8918,7 +8934,7 @@ textarea:focus-within {
   flex: 1;
 }
 .cta__subscribe h2 {
-  color: #8e3bc6;
+  color: #3b94d9;
 }
 .cta__subscribe h2 span {
   color: white;
@@ -10677,5 +10693,5 @@ html[data-bs-theme="dark"] .partner--gradient::after {
   border: solid 1px rgb(36, 190, 36);
 }
 .cta__subscribe-container {
-  /* background-color: #8e3bc6; */
+  /* background-color: #3b94d9; */
 }
