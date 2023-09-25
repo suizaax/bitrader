@@ -1057,6 +1057,7 @@ ol {
 
 /* @@@@@@@@@@@@@  aditional Property CSS Writing Now  @@@@@@@@@@@@@@ */
 [data-bs-theme="light"] {
+  --nav-header-bg: white;
   --svg-color: #3b94d9;
   --brand-color: #3b94d9;
   --secondary-color: #0a4fd5;
@@ -1114,6 +1115,7 @@ ol {
   --bg-team: #d6e5ff;
   --form-focus-color: #366cd5;
   --wh-color: #fff;
+
   --black-color: #000;
   --floating-content-border-color: rgba(0, 0, 0, 0.02);
   --floating-content-bg-color: rgba(255, 255, 255, 0.9);
@@ -1148,6 +1150,7 @@ ol {
 }
 
 [data-bs-theme="dark"] {
+  --nav-header-bg: black;
   --brand-color: #3b94d9;
   --secondary-color: #8e3bc6;
   --tertiary-color: #002a1e;
@@ -2469,7 +2472,7 @@ ol {
 .swiper-nav__btn.active,
 .swiper-nav__btn:hover {
   background-color: #8e3bc6;
-  border-color:#8e3bc6;
+  border-color: #8e3bc6;
 }
 
 .swiper-nav__btn.active i,
@@ -2689,6 +2692,12 @@ ol {
 
 .padding-top {
   padding-block-start: 80px;
+}
+.dark-btn {
+  bottom: auto !important;
+  left: auto !important;
+  top: 12.5vh !important;
+  right: 5% !important;
 }
 @media (min-width: 992px) {
   .padding-top {
@@ -3896,7 +3905,7 @@ h6 a {
   left: 0;
   box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.3);
   z-index: 999;
-  background-color: var(--wh-color);
+  background-color: var(--nav-header-bg);
 }
 .header-section--style3 {
   content: "";
@@ -4570,7 +4579,7 @@ h6 a {
   }
 }
 .banner__content-heading span {
-  color: var(--secondary-color);
+  color: #3b94d9;
 }
 .banner__content-heading--style2 {
   max-inline-size: 15ch;
@@ -7014,8 +7023,8 @@ textarea:focus-within {
 }
 .social__link.active.social__link--style1,
 .social__link:hover.social__link--style1 {
-  background-color: #8e3bc6;
-  border-color: #8e3bc6;
+  background-color: #3b94d9;
+  border-color: #3b94d9;
   color: white;
 }
 .social__link.active.social__link--style1 svg,
@@ -7969,11 +7978,7 @@ textarea:focus-within {
   content: "";
   height: 96%;
   width: 1000px;
-  background: linear-gradient(
-    4deg,
-    #8c44bb86 0%,
-    var(--bg-shape-color-2) 100%
-  );
+  background: linear-gradient(4deg, #8c44bb86 0%, var(--bg-shape-color-2) 100%);
   border-radius: 100px 213px 100px 100px;
 }
 @media (min-width: 768px) {
@@ -10576,6 +10581,21 @@ html[data-bs-theme="dark"] .account__divider--style1::before {
     rgba(237, 242, 248, 0.12) 99.59%
   );
 }
+html[data-bs-theme="dark"] .trk-btn--outline22 {
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  border: 1px solid white;
+  color: white;
+}
+html[data-bs-theme="dark"] .trk-btn--outline22 span.style1 svg rect {
+  stroke: white;
+}
+html[data-bs-theme="dark"] .trk-btn--outline22 span.style1 svg g path {
+  stroke: white;
+}
 @media (min-width: 768px) {
   html[data-bs-theme="dark"] .contact__form::before {
     background: linear-gradient(
@@ -10630,7 +10650,7 @@ html[data-bs-theme="dark"] .partner--gradient::after {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
   position: fixed;
-  bottom: 5%;
+  bottom: 7%;
   left: 5%;
   z-index: 9;
   width: 40px;
